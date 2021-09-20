@@ -1,15 +1,90 @@
 <!DOCTYPE html>
 <html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Šachy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Šachy</title>
-</head>
+  <body>
+    <main>
+      <h1>Šachy</h1>
+      <section class="players">
+        <div class="avatar">
+          <img class="player1" src="./obrazky/hraci/honza.jpg" alt="hráč1" />
+          <div class="text">
+            <h2>Honza</h2>
+            <p>bílý hráč</p>
+          </div>
+        </div>
+        <div class="avatar">
+          <img class="player2" src="./obrazky/hraci/adela.jpg" alt="hráč2" />
+          <div class="text">
+            <h2>Adéla</h2>
+            <p>černý hráč</p>
+          </div>
+        </div>
+      </section>
+      <section class="board">
+        <img
+          class="figurka strelec"
+          src="./obrazky/figurky/strelec-cerna.svg"
+          alt="černý střelec"
+        />
+        <img
+          class="figurka pesec"
+          src="./obrazky/figurky/pesec-cerna.svg"
+          alt="černý pěšec"
+        />
+        <img
+          class="figurka pesec2"
+          src="./obrazky/figurky/pesec-cerna.svg"
+          alt="černý pěšec"
+        />
+        <img
+          class="figurka pesec3"
+          src="./obrazky/figurky/pesec-bila.svg"
+          alt="bílý pěšec"
+        />
+        <img
+          class="figurka pesec4"
+          src="./obrazky/figurky/pesec-cerna.svg"
+          alt="černý pěšec"
+        />
+        <img
+          class="figurka kun"
+          src="./obrazky/figurky/kun-bila.svg"
+          alt="bílý kůň"
+        />
 
-<body>
-	<h1>Šachy</h1>
-</body>
-
+        <img
+          class="figurka kral"
+          src="./obrazky/figurky/kral-cerna.svg"
+          alt="černý král"
+        />
+        <img
+          class="figurka vez"
+          src="./obrazky/figurky/vez-cerna.svg"
+          alt="černá věž"
+        />
+        <img
+          class="figurka kral2"
+          src="./obrazky/figurky/kral-bila.svg"
+          alt="bílý král"
+        />
+      </section>
+      <section class="win">
+        <h3>Vyhrál černý!</h3>
+        <button>Hrát znovu</button>
+      </section>
+    </main>
+  </body>
 </html>

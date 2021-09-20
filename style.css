@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+h2 {
+  font-size: 2.3rem;
+  text-align: right;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: rgb(73, 73, 73);
+}
+
+.player1,
+.player2 {
+  width: 75px;
+  height: 75px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.player2 {
+  order: 2;
+}
+
+.players {
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.avatar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 10px;
+}
+
+button {
+  font-size: 1.4rem;
+  margin: 20px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4c7dc0;
+  color: white;
+}
+
+.win {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.board {
+  border: 15px solid #392c16;
+  border-radius: 5px;
+  background-image: url("./obrazky/sachovnice.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 600px;
+  min-height: 600px;
+
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.figurka {
+  max-width: 70px;
+}
+
+.strelec {
+  grid-column: 5;
+}
+
+.pesec {
+  grid-row: 2;
+}
+
+.pesec2 {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.pesec3 {
+  grid-column: 4;
+  grid-row: 4;
+}
+
+.pesec4 {
+  grid-column: 8;
+  grid-row: 4;
+}
+
+.kun {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.kral {
+  grid-column: 6;
+  grid-row: 6;
+}
+
+.vez {
+  grid-column: 3;
+  grid-row: 8;
+}
+
+.kral2 {
+  grid-column: 6;
+  grid-row: 8;
+}
