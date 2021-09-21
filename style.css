@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -13,6 +14,9 @@ main {
   justify-content: center;
   flex-direction: column;
   font-family: "Roboto", sans-serif;
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 h1 {
@@ -51,7 +55,7 @@ p {
 
 .players {
   display: flex;
-  width: 600px;
+  width: 100%;
   justify-content: space-between;
   padding-bottom: 20px;
   padding-top: 20px;
@@ -90,16 +94,14 @@ button {
   background-image: url("./obrazky/sachovnice.png");
   background-repeat: no-repeat;
   background-size: contain;
-  min-width: 600px;
-  min-height: 600px;
-
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
 }
 
 .figurka {
-  max-width: 70px;
+  width: 70px;
+  max-width: 100%;
 }
 
 .strelec {
