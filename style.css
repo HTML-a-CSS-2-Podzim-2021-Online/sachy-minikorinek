@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
 }
 
 main {
@@ -13,7 +14,6 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-family: "Roboto", sans-serif;
   width: 600px;
   max-width: 100%;
   margin: 0 auto;
@@ -89,6 +89,9 @@ button {
 }
 
 .board {
+  width: 600px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
   border: 15px solid #392c16;
   border-radius: 5px;
   background-image: url("./obrazky/sachovnice.png");
